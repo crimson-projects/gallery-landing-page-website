@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery Landing Page Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="img">
+        <img src="logo.svg" alt="" />
+      </div>
+      <div class="heading">ART GALLERY</div>
+      <div class="menu">
+        <img src="menu.svg" alt="" />
+      </div>
+    </header>
+    <div class="container">
+      <div class="inner-container inner-container-1">
+        <div class="inner-inner-container">
+          <div class="top-section">
+            <h1>
+              The <br />
+              night <br />
+              watch
+            </h1>
+            <p>MDCLIIX</p>
+          </div>
+          <div class="bottom-section">2</div>
+        </div>
+      </div>
+      <div class="inner-container inner-container-2">
+        <div class="inner-inner-container">
+          <div class="top-section">
+            <h1>
+              The <br />
+              Kitchen <br />
+              Maid
+            </h1>
+            <p>MDCLI</p>
+          </div>
+          <div class="bottom-section">3</div>
+        </div>
+      </div>
+      <div class="inner-container inner-container-3">
+        <div class="inner-inner-container">
+          <div class="top-section">
+            <h1>
+              The <br />
+              artist in <br />
+              studio
+            </h1>
+            <p>MDCXVII</p>
+          </div>
+          <div class="bottom-section">4</div>
+        </div>
+      </div>
+      <div class="inner-container inner-container-4">
+        <div class="inner-inner-container">
+          <div class="top-section">
+            <h1>
+              Titus <br />
+              as a <br />
+              Monk
+            </h1>
+            <p>MDCLX</p>
+          </div>
+          <div class="bottom-section">5</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline();
+      tl.from(".img, .heading, .menu, h1, p, .bottom-section", {
+        duration: 1,
+        y: 200,
+        opacity: 0,
+        stagger: {
+          amount: 0.5,
+        },
+      });
+    </script>
+  </body>
+</html>

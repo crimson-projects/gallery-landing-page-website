@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f0eed7;
+  color: #161616;
+  overflow: hidden;
+}
+header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  height: 80px;
+  width: 100%;
+}
+header .img img {
+  width: 60px;
+  padding: 0px 20px;
+  filter: invert(0.9);
+}
+header .heading {
+  font-family: "Neutral Face";
+}
+header .menu img {
+  width: 35px;
+  padding: 0px 50px;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.inner-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: transparent;
+  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1) ease-in-out;
+}
+.inner-container .inner-inner-container {
+  width: 100%;
+  height: 80%;
+  margin-top: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border-left: 1px solid rgba(39, 39, 39, 0.281);
+}
+
+.top-section h1 {
+  font-size: 3rem;
+  font-family: "Kenoky";
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+.top-section p {
+  padding: 0.5rem 0px;
+  font-family: "Neutral Face";
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  padding-left: 2px;
+}
+.inner-container .bottom-section {
+  font-size: 25rem;
+  margin-bottom: 50px;
+  font-family: "Kenoky";
+  font-weight: lighter;
+  color: #8f0000;
+}
+.inner-container:hover .top-section h1 {
+  transition: color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  color: white;
+}
+.inner-container:hover .top-section p {
+  transition: color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  color: white;
+}
+
+.inner-container:hover .bottom-section {
+  transition: color 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  color: white;
+}
+.inner-container-1:hover {
+  background-image: url(1.jpg);
+}
+
+.inner-container-2:hover {
+  background-image: url(2.jpg);
+}
+
+.inner-container-3:hover {
+  background-image: url(3.jpg);
+}
+
+.inner-container-4:hover {
+  background-image: url(4.jpg);
+}
